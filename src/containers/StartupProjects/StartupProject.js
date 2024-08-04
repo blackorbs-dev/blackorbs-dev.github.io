@@ -3,6 +3,9 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
@@ -17,6 +20,17 @@ export default function StartupProject() {
   if (!bigProjects.display) {
     return null;
   }
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true
+  };
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
@@ -43,7 +57,20 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
-                  {project.image ? (
+                <div className="slider-container">
+                  <Slider {...settings}>{
+                    project.images.map((item,i) => {
+                      return (
+                        <div key={i}><img
+                         src={item}
+                         alt={project.projectName}
+                         className="slide-image"
+                       ></img></div>
+                     )
+                   })
+                 }</Slider>
+                </div>
+                  {/* {project.image ? (
                     <div className="project-image">
                       <img
                         src={project.image}
@@ -51,7 +78,7 @@ export default function StartupProject() {
                         className="card-image"
                       ></img>
                     </div>
-                  ) : null}
+                  ) : null} */}
                   <div className="project-detail">
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}

@@ -3,7 +3,10 @@
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  width: 245px;
+}
+.slide-image {
+  width: 100%;
 }
 .card-title {
   color: $titleColor;
@@ -51,16 +54,22 @@
 }
 .project-image {
   position: relative;
-  height: 250px;
+  height: 450px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.slider-container {
+  padding: 10px;
+}
+.slick-prev:before, .slick-next:before {
+  color: $buttonColor !important;
+}
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   gap: 1rem 1rem;
 }
 

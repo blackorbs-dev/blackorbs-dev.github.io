@@ -20,26 +20,25 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Jamiu Akinyemi",
+  title: "Hi all, I'm Jamiu",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Enthusiastic Mobile App Developer 🚀 having an experience of building Mobile applications with Java / Kotlin / Flutter and some other cool libraries and SDKs."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "https://cdn.jsdelivr.net/gh/blackorbs-dev/files@main/resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/blackorbs-dev",
+  linkedin: "https://www.linkedin.com/in/blackorbs",
+  gmail: "blackorbs.dev@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  stackoverflow: "https://stackoverflow.com/users/7904082/akinyemi-jamiu",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +48,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Passionate about leveraging technology to connect people and businesses, I am eager to contribute to innovative projects in a dynamic and collaborative environment using below tech stacks",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop highly interactive and responsive User Interfaces for your mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Cross-platform development with Flutter framework"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Integration of third party services such as Firebase/ RESTFul API / Admob and other Ads Monetisation SDKs"
     )
   ],
 
@@ -65,56 +64,44 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "android",
+      fontAwesomeClassname: "fab fa-android"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "kotlin",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "flutter",
+      fontAwesomeClassname: "fab fa-flutter"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "dart",
+      fontAwesomeClassname: "fab fa-dart-lang"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "play console",
+      fontAwesomeClassname: "fab fa-google-play"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "amazon app store",
+      fontAwesomeClassname: "fab fa-amazon"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
+      skillName: "sqlite",
       fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
     },
     {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "android studio",
+      fontAwesomeClassname: "fas fa-laptop"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -123,13 +110,13 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
+      schoolName: "First Technical University",
+      logo: require("./assets/images/techuLogo.jpg"),
+      subHeader: "Bachelors Degree in Petroleum Engineering",
+      duration: "December 2019 - August 2024",
       desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -138,7 +125,7 @@ const educationInfo = {
     },
     {
       schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/fpeLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "September 2013 - April 2017",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
@@ -153,16 +140,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "UI Design", //Insert stack or technology you have experience in
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Native Android Development",
+      progressPercentage: "95%"
     },
     {
-      Stack: "Programming",
+      Stack: "Cross-platform Development",
       progressPercentage: "60%"
+    },
+    {
+      Stack: "Testing and Debugging",
+      progressPercentage: "88%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +165,44 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Android Developer",
+      company: "Freelance (Upwork, Fiverr)",
+      companylogo: require("./assets/images/upworkLogo.jpg"),
+      date: "April 2022 – Present",
+      // desc: "Developed and uploaded numerous apps to the Google Play Store.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed and uploaded numerous apps to the Google Play Store achieving 20,000+ installs in first month and over 500 Daily Active Users (DAU)",
+        "Managed app listings, updates, and user feedback, ensuring compliance with Google Play Store guidelines for smooth app launches",
+        "Generated $1000+ Monthly revenue through effective implementation of monetization strategies using Google AdMob and other Ads SDKs to maximize revenue potential while maintaining a positive user experience",
+        "Integrated a variety of SDKs such as Firebase Cloud Messaging, Firestore, and Cloud Storage to enhance app capabilities and user engagement"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
+      role: "Computer Engineer Intern",
+      company: "Qaslat Programming and Engineering House",
       companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "Oct 2017 – Feb 2018",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Gained hands-on experience in software installation and system testing",
+        "Performed upgrade/new installation of Windows OS and other software programs (Microsoft package, Avast Security) on various systems (HP, Dell, Asus, Lenovo)",
+        "Provided technical support and performed computer repairs",
+        "Collaborated with the engineering team to ensure smooth operation of various systems",
+        "⁠Enhanced technical skills and practical problem-solving abilities within a professional environment"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Blog Writer",
+      company: "Kefblog",
+      companylogo: require("./assets/images/kefblogLogo.png"),
+      date: "May 2017 – Sep 2022",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Created and published over a hundred engaging and informative contents to boost visibility and readership",
+        "⁠Optimized content for search engines (SEO) to enhance website traffic achieving 14,000+ monthly website visits",
+        "⁠Enhanced website functionality and improved user experience",
+        "Maintained the website's technical aspects to ensure seamless performance"
+      ]
     }
   ]
 };
@@ -212,30 +218,91 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "SOME PROJECTS THAT I HAVE WORKED ON SHOWCASING MY EXPERTISE",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      images: [
+        require("./assets/images/ecomm1.png"),
+        require("./assets/images/ecomm2.png"),
+        require("./assets/images/ecomm3.png"),
+        require("./assets/images/ecomm4.png")
+      ],
+      // image: require("./assets/images/appshow.gif"),
+      projectName: "E-commerce App",
+      projectDesc: "App built with Java. Utilises Firebase Firestore and Cloud Storage",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
+        // {
+        //   name: "Visit Website",
+        //   url: "http://saayahealth.com/"
+        // }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      images: [
+        require("./assets/images/seller1.png"),
+        require("./assets/images/seller2.png"),
+        require("./assets/images/seller3.gif")
+      ],
+      // image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Seller App",
+      projectDesc: "App built with Kotlin and Jetpack Compose for UI",
+      footerLink: [
+        // {
+        //   name: "Visit Website",
+        //   url: "http://nextu.se/"
+        // }
+      ]
+    },
+    {
+      images: [
+        require("./assets/images/gpa1.png"),
+        require("./assets/images/gpa2.png"),
+        require("./assets/images/gpa3.png"),
+        require("./assets/images/gpa4.png")
+      ],
+      // image: require("./assets/images/nextuLogo.webp"),
+      projectName: "GPA Calculator",
+      projectDesc: "App developed with Flutter for compatibility with Andoid and iOS devices.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View Video",
+          url: "https://www.youtube.com/@blackorbs"
         }
+      ]
+    },
+    {
+      images: [
+        require("./assets/images/movie1.png"),
+        require("./assets/images/movie2.png")
+      ],
+      // image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Movies Finder App",
+      projectDesc: "App built with Kotlin. Utiilises Coroutines, Retrofit, Hilt, JUnit and some Jetpack Libraries",
+      footerLink: [
+        {
+          name: "View Project on Github",
+          url: "https://github.com/blackorbs-dev/MovieFinder"
+        }
+      ]
+    },
+    {
+      images: [
+        require("./assets/images/web1.png"),
+        require("./assets/images/web2.png"),
+        require("./assets/images/web3.png"),
+        require("./assets/images/web4.png"),
+        require("./assets/images/web5.png")
+      ],
+      // image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Web Browser and File Downloader App",
+      projectDesc: "App built with Java. Utilises OkHttp for network calls",
+      footerLink: [
+        // {
+        //   name: "Visit Website",
+        //   url: "http://nextu.se/"
+        // }
       ]
     }
   ],
@@ -252,49 +319,44 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Sololearn Programming Courses Certificate of Completion",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Certificate in Java, Python and Kotlin showcasing my theoretical and practical understanding of the programming languages.",
+      image: require("./assets/images/sololearn.png"),
+      imageAlt: "",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Java",
+          url: "https://api2.sololearn.com/v2/certificates/CT-FF67R1OH/image/png"
         },
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+          name: "Python",
+          url: "https://api2.sololearn.com/v2/certificates/CT-UGLLOU55/image/png"
         },
         {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Kotlin",
+          url: "https://api2.sololearn.com/v2/certificates/CT-3VHPMS23/image/png"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Society of Petroleum Engineering Tech-U Chapter Certificate of Appreciation",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+        "Award for being a valued member and program advisor. Also nominated for Python Bootcamp Instructor role.",
+      image: require("./assets/images/speLogo.png"),
       imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      footerLink: []
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Multi-platform Coiled Tubing Fatigue Life Estimation Software",
+      subtitle: "Developed a software that can be used by Oil and Gas companies to estimate the fatigue life of Coiled Tubing Equipment and ensure timely retirement of the equipment to prevent unexpected failure and ensure personnel safety. This software was developed with Flutter and can run on macOS, Windows, Linux, Android and iOS",
+      image: require("./assets/images/coilTubing.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        // {name: "Certification", url: ""},
         {
-          name: "Final Project",
+          name: "Final Year Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"
         }
       ]
@@ -324,7 +386,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +405,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +418,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -371,19 +433,19 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "I'm eager to connect with like-minded professionals, share insights, and explore opportunities that enable me to drive innovation and create positive change, both locally and globally.",
+  number: "+2348168156922",
+  email_address: "blackorbs.dev@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
