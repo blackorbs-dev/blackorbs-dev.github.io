@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7eb6e417.css",
-    "main.js": "/static/js/main.1e3b58ed.js",
+    "main.js": "/static/js/main.790bc754.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.ddc9ee8b.chunk.js": "/static/js/769.ddc9ee8b.chunk.js",
     "static/media/movie1.png": "/static/media/movie1.ef3d156e2ed26022faab.png",
@@ -22,10 +22,10 @@
     "static/media/gpa3.png": "/static/media/gpa3.c3e71b9615cdbc3af38f.png",
     "static/media/gpa2.png": "/static/media/gpa2.de0fbf0a9d64caa3be95.png",
     "static/media/web2.png": "/static/media/web2.aa078c611bc7bea96b4b.png",
-    "static/media/resume.pdf": "/static/media/resume.39bbf3714858ea0b479b.pdf",
     "static/media/ecomm4.png": "/static/media/ecomm4.fcbf1a2848495706cec0.png",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/gpa1.png": "/static/media/gpa1.84e491ae0381acaae8af.png",
+    "static/media/resume.pdf": "/static/media/resume.e69641395f8855a2324e.pdf",
     "static/media/speLogo.png": "/static/media/speLogo.5d4f9562f4f0619e305c.png",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/coilTubing.jpeg": "/static/media/coilTubing.64b1d26ad98aa78e4c5d.jpeg",
@@ -43,12 +43,12 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.7eb6e417.css.map": "/static/css/main.7eb6e417.css.map",
-    "main.1e3b58ed.js.map": "/static/js/main.1e3b58ed.js.map",
+    "main.790bc754.js.map": "/static/js/main.790bc754.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
     "769.ddc9ee8b.chunk.js.map": "/static/js/769.ddc9ee8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7eb6e417.css",
-    "static/js/main.1e3b58ed.js"
+    "static/js/main.790bc754.js"
   ]
 }
